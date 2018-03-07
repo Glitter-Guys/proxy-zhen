@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const Header = window.Header;
-const Details = window.Details;
+
 
 ReactDOM.render(
     React.createElement(Header, {data:window.data}),
     document.getElementById('header')
   );
-  window.ReactDOM.render(
+window.ReactDOM.render(
     React.createElement(Details),
     document.getElementById('details')
+);
+ReactDOM.render(
+    React.createElement(Attendees),
+    document.getElementById('attendees')
   );
+ReactDOM.render(
+    React.createElement(Suggestions),
+    document.getElementById('suggestions')
+);
+ReactDOM.render(
+    React.createElement(WhereWhen),
+    document.getElementById('wherewhen')
+);

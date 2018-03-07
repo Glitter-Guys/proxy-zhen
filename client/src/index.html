@@ -3,27 +3,34 @@
   <head>
     <meta charset="UTF-8">
     <title>FEC</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
   </head>
   <body>
-    <div id="header"></div>
-    <div id="details"></div>
-    <div id="related"></div>
-    <div id="reviews"></div>
+    <div id='header_container'>
+      <div id="header"></div>
+    </div>
+    <div id='content_container'>
+      <div id='left_col'>
+        <div id="details"></div>
+        <div id="attendees"></div>
+        <div id="suggestions"></div>
+      </div>
+      <div id='right_col'>
+        <div id="wherewhen"></div>
+      </div>
+    </div>
+    
     <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
-    <script src="http://localhost:8080/event/247627526/bundle.js"></script>
-    <script src='http://localhost:4000/bundle.js'></script>
-    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
-    <!-- <script>
-      ReactDOM.render(
-        React.createElement(Header, {data:window.data}),
-        document.getElementById('header')
-      );
-      ReactDOM.render(
-        React.createElement(Details),
-        document.getElementById('details')
-      );
-    </script> -->
+      <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
+      
+      <script src="http://localhost:8080/event/247627526/bundle.js"></script>
+      <script src='http://localhost:4000/bundle.js'></script>
+      <script src='http://localhost:4001/bundle.js'></script>
+      <script src='http://localhost:8000/bundle.js'></script>
+      <script src='http://localhost:9000/build/app.bundle.js'></script>
+
+      <!-- Style Sheet for Proxy Pretty Edits -->
+      <link rel="stylesheet" href="./styles/main.css"></link>
   </body>
 </html>
